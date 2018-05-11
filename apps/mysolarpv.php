@@ -29,7 +29,7 @@
     <table style="width:100%">
     <tr>
         <td style="border:0; width:33%">
-            <div class="electric-title">USE NOW</div>
+        <div class="electric-title"><?php echo _("USE NOW"); ?></div>
             <div class="power-value"><span class="usenow">0</span>W</div>
         </td>
         <td style="text-align:center; border:0; width:33%">
@@ -37,7 +37,7 @@
             <div class="power-value"><span class="balance"></span></div>
         </td>
         <td style="text-align:right; border:0; width:33%">
-            <div class="electric-title">SOLAR PV</div>
+        <div class="electric-title"><?php echo _("SOLAR PV"); ?></div>
             <div class="power-value" style="color:#dccc1f"><span class="solarnow">0</span>W</div>
         </td>
 
@@ -47,12 +47,12 @@
 
     <div class="visnavblock" style="height:28px; padding-bottom:5px;">
         <div class="powergraph-navigation">
-            <span class="visnav time" time='1'>1h</span>
-            <span class="visnav time" time='8'>8h</span>
-            <span class="visnav time" time='24'>D</span>
-            <span class="vistimeW visnav time" time='168'>W</span>
-            <span class="vistimeM visnav time" time='720'>M</span>
-            <span class="vistimeY visnav time" time='8760'>Y</span>
+            <span class="visnav time" time='1'><?php echo _("1h"); ?></span>
+            <span class="visnav time" time='8'><?php echo _("8h"); ?></span>
+            <span class="visnav time" time='24'><?php echo _("D"); ?></span>
+            <span class="vistimeW visnav time" time='168'><?php echo _("W"); ?></span>
+            <span class="vistimeM visnav time" time='720'><?php echo _("M"); ?></span>
+            <span class="vistimeY visnav time" time='8760'><?php echo _("Y"); ?></span>
             <span id='zoomin' class='visnav' >+</span>
             <span id='zoomout' class='visnav' >-</span>
             <span id='left' class='visnav' >&lt;</span>
@@ -60,16 +60,16 @@
         </div>
 
         <div class="bargraph-navigation" style="display:none">
-            <span class="bargraph-viewall visnav" style="font-size:14px">VIEW ALL</span>
+        <span class="bargraph-viewall visnav" style="font-size:14px"><?php echo _("VIEW ALL"); ?></span>
             <!--
-            <span class="bargraph-viewdaily visnav" style="font-size:14px">DAILY</span>
-            <span class="bargraph-viewmonthly visnav" style="font-size:14px">MONTHLY</span>
-            <span class="bargraph-viewannually visnav" style="font-size:14px">ANNUALLY</span>
+            <span class="bargraph-viewdaily visnav" style="font-size:14px"><?php echo _("DAILY"); ?></span>
+            <span class="bargraph-viewmonthly visnav" style="font-size:14px"><?php echo _("MONTHLY"); ?></span>
+            <span class="bargraph-viewannually visnav" style="font-size:14px"><?php echo _("ANNUALLY"); ?></span>
             -->
         </div>
 
-        <span class="visnav viewhistory" style="float:right; font-size:14px">VIEW HISTORY</span>
-        <span class="visnav balanceline" style="float:right; font-size:14px">SHOW BALANCE</span>
+        <span class="visnav viewhistory" style="float:right; font-size:14px"><?php echo _("VIEW HISTORY"); ?></span>
+        <span class="visnav balanceline" style="float:right; font-size:14px"><?php echo _("SHOW BALANCE"); ?></span>
     </div>
 
     <div id="placeholder_bound" style="width:100%; height:500px;">
@@ -81,29 +81,29 @@
     <table style="width:100%">
     <tr>
         <td class="appbox">
-            <div class="appbox-title">USE</div>
+        <div class="appbox-title"><?php echo _("USE"); ?></div>
             <div><span class="appbox-value total_use_kwh" style="color:#0699fa">0</span> <span class="appbox-units" style="color:#0699fa">kWh</span></div>
         </td>
 
         <td class="appbox">
-            <div class="appbox-title">SOLAR</div>
+        <div class="appbox-title"><?php echo _("SOLAR"); ?></div>
             <div><span class="appbox-value total_solar_kwh" style="color:#dccc1f">0</span> <span class="appbox-units" style="color:#dccc1f">kWh</span></div>
         </td>
 
         <td class="appbox">
-            <div class="appbox-title">DIRECT</div>
+        <div class="appbox-title"><?php echo _("DIRECT"); ?></div>
             <div style="padding-bottom:5px"><span class="appbox-value total_use_direct_prc" style="color:#89ae65">0</span></div>
             <div><span class="appbox-units total_use_direct_kwh" style="color:#89ae65">0</span> <span class="appbox-units" style="color:#89ae65">kWh</span></div>
         </td>
 
        <td class="appbox">
-            <div class="appbox-title">EXPORT</div>
+       <div class="appbox-title"><?php echo _("EXPORT"); ?></div>
             <div style="padding-bottom:5px"><span class="appbox-value total_export_prc" style="color:#b7aa1f">0</span></div>
             <div><span class="appbox-units total_export_kwh" style="color:#b7aa1f">0</span> <span class="appbox-units" style="color:#b7aa1f">kWh</span></div>
         </td>
 
         <td class="appbox">
-            <div class="appbox-title">GRID</div>
+        <div class="appbox-title"><?php echo _("GRID"); ?></div>
             <div style="padding-bottom:5px"><span class="appbox-value total_import_prc" style="color:#d52e2e">0</span></div>
             <div><span class="appbox-units total_import_kwh" style="color:#d52e2e">0</span> <span class="appbox-units" style="color:#d52e2e">kWh</span></div>
         </td>
@@ -159,13 +159,13 @@ if (!sessionwrite) $(".openconfig").hide();
 // Configuration
 // ----------------------------------------------------------------------
 config.app = {
-    "use":{"type":"feed", "autoname":"use", "engine":"5", "description":"House or building use in watts"},
-    "solar":{"type":"feed", "autoname":"solar", "engine":"5", "description":"Solar pv generation in watts"},
-    //"export":{"type":"feed", "autoname":"export", "engine":5, "description":"Exported solar in watts"},
-    "use_kwh":{"optional":true, "type":"feed", "autoname":"use_kwh", "engine":5, "description":"Cumulative use in kWh"},
-    "solar_kwh":{"optional":true, "type":"feed", "autoname":"solar_kwh", "engine":5, "description":"Cumulative solar generation in kWh"},
-    "import_kwh":{"optional":true, "type":"feed", "autoname":"import_kwh", "engine":5, "description":"Cumulative grid import in kWh"}
-    //"import_unitcost":{"type":"value", "default":0.1508, "name": "Import unit cost", "description":"Unit cost of imported grid electricity"}
+"use":{"type":"feed", "autoname":"use", "engine":"5", "description":"<?php echo _("House or building use in watts"); ?>"},
+    "solar":{"type":"feed", "autoname":"solar", "engine":"5", "description":"<?php echo _("Solar pv generation in watts"); ?>"},
+    //"export":{"type":"feed", "autoname":"export", "engine":5, "description":"<?php echo _("Exported solar in watts"); ?>"},
+    "use_kwh":{"optional":true, "type":"feed", "autoname":"use_kwh", "engine":5, "description":"<?php echo _("Cumulative use in kWh"); ?>"},
+    "solar_kwh":{"optional":true, "type":"feed", "autoname":"solar_kwh", "engine":5, "description":"<?php echo _("Cumulative solar generation in kWh"); ?>"},
+    "import_kwh":{"optional":true, "type":"feed", "autoname":"import_kwh", "engine":5, "description":"<?php echo _("Cumulative grid import in kWh"); ?>"}
+    //"import_unitcost":{"type":"value", "default":0.1508, "name": "Import unit cost", "description":"<?php echo _("Unit cost of imported grid electricity"); ?>"}
 };
 config.name = "<?php echo $name; ?>";
 config.db = <?php echo json_encode($config); ?>;
@@ -231,26 +231,26 @@ function init()
     });
 
     $(".balanceline").click(function () {
-        if ($(this).html()=="SHOW BALANCE") {
+        if ($(this).html()==_("SHOW BALANCE")) {
             show_balance_line = 1;
             draw();
-            $(this).html("HIDE BALANCE");
+            $(this).html(_("HIDE BALANCE"));
         } else {
             show_balance_line = 0;
             draw();
-            $(this).html("SHOW BALANCE");
+            $(this).html(_("SHOW BALANCE"));
         }
     });
 
     $(".viewhistory").click(function () {
-        if ($(this).html()=="VIEW HISTORY") {
+        if ($(this).html()==_("VIEW HISTORY")) {
             viewmode = "bargraph";
             $(".balanceline").hide();
             $(".powergraph-navigation").hide();
             $(".bargraph-navigation").show();
 
             draw();
-            setTimeout(function() { $(".viewhistory").html("POWER VIEW"); },80);
+            setTimeout(function() { $(".viewhistory").html("<?php echo _("POWER VIEW"); ?>"); },80);
         } else {
 
             viewmode = "powergraph";
@@ -260,7 +260,7 @@ function init()
 
             draw();
             powergraph_events();
-            setTimeout(function() { $(".viewhistory").html("VIEW HISTORY"); },80);
+            setTimeout(function() { $(".viewhistory").html("<?php echo _("VIEW HISTORY"); ?>"); },80);
         }
     });
 }
@@ -362,17 +362,17 @@ function livefn()
     var balance = solar_now - use_now;
 
     if (balance==0) {
-        $(".balance-label").html("PERFECT BALANCE");
+      $(".balance-label").html("<?php echo _("PERFECT BALANCE"); ?>");
         $(".balance").html("");
     }
 
     if (balance>0) {
-        $(".balance-label").html("EXPORTING");
+      $(".balance-label").html("<?php echo _("EXPORTING"); ?>");
         $(".balance").html("<span style='color:#2ed52e'><b>"+Math.round(Math.abs(balance))+"W</b></span>");
     }
 
     if (balance<0) {
-        $(".balance-label").html("IMPORTING");
+      $(".balance-label").html("<?php echo _("IMPORTING"); ?>");
         $(".balance").html("<span style='color:#d52e2e'><b>"+Math.round(Math.abs(balance))+"W</b></span>");
     }
 
@@ -652,8 +652,8 @@ function draw_bargraph()
 
     var plot = $.plot($('#placeholder'),historyseries,options);
 
-    $('#placeholder').append("<div style='position:absolute;left:50px;top:30px;color:#666;font-size:12px'><b>Above:</b> Onsite Use & Total Use</div>");
-    $('#placeholder').append("<div style='position:absolute;left:50px;bottom:50px;color:#666;font-size:12px'><b>Below:</b> Exported solar</div>");
+    $('#placeholder').append("<div style='position:absolute;left:50px;top:30px;color:#666;font-size:12px'><b><?php echo _("Above"); ?>:</b> <?php echo _("Onsite Use & Total Use"); ?></div>");
+    $('#placeholder').append("<div style='position:absolute;left:50px;bottom:50px;color:#666;font-size:12px'><b><?php echo _("Below"); ?>:</b> <?php echo _("Exported solar"); ?></div>");
 
     // Because the bargraph is only drawn once when the view is changed we attach the events at this point
     bargraph_events();
@@ -718,7 +718,7 @@ function bargraph_events(){
             $(".balanceline").show();
             $(".bargraph-navigation").hide();
             $(".powergraph-navigation").show();
-            $(".viewhistory").html("VIEW HISTORY");
+            $(".viewhistory").html(_("VIEW HISTORY"));
             $('#placeholder').unbind("plotclick");
             $('#placeholder').unbind("plothover");
             $('#placeholder').unbind("plotselected");

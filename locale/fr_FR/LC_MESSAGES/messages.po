@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: emoncms3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-11 09:08+0200\n"
+"PO-Revision-Date: 2018-05-11 09:08+0200\n"
+"Last-Translator: Nicolas TUFFIER\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../apps/mysolarpv.php:32
+msgid "USE NOW"
+msgstr "CONSOMMATION"
+
+#: ../../../apps/mysolarpv.php:40
+msgid "SOLAR PV"
+msgstr "PRODUCTION"
+
+#: ../../../apps/mysolarpv.php:50
+msgid "1h"
+msgstr "1h"
+
+#: ../../../apps/mysolarpv.php:51
+msgid "8h"
+msgstr "8h"
+
+#: ../../../apps/mysolarpv.php:52
+msgid "D"
+msgstr "J"
+
+#: ../../../apps/mysolarpv.php:53
+msgid "W"
+msgstr "S"
+
+#: ../../../apps/mysolarpv.php:54
+msgid "M"
+msgstr "M"
+
+#: ../../../apps/mysolarpv.php:55
+msgid "Y"
+msgstr "A"
+
+#: ../../../apps/mysolarpv.php:63
+msgid "VIEW ALL"
+msgstr "VOIR TOUT"
+
+#: ../../../apps/mysolarpv.php:65
+msgid "DAILY"
+msgstr "QUOTIDIEN"
+
+#: ../../../apps/mysolarpv.php:66
+msgid "MONTHLY"
+msgstr "MENSUEL"
+
+#: ../../../apps/mysolarpv.php:67
+msgid "ANNUALLY"
+msgstr "ANNUEL"
+
+#: ../../../apps/mysolarpv.php:71
+msgid "VIEW HISTORY"
+msgstr "HISTORIQUE"
+
+#: ../../../apps/mysolarpv.php:72
+msgid "SHOW BALANCE"
+msgstr "VOIR REPARTITION"
+
+#: ../../../apps/mysolarpv.php:84
+msgid "USE"
+msgstr "CONSOMMATION"
+
+#: ../../../apps/mysolarpv.php:89
+msgid "SOLAR"
+msgstr "SOLAIRE"
+
+#: ../../../apps/mysolarpv.php:94
+msgid "DIRECT"
+msgstr "AUTO-CONSO"
+
+#: ../../../apps/mysolarpv.php:100
+msgid "EXPORT"
+msgstr "INJECTION"
+
+#: ../../../apps/mysolarpv.php:106
+msgid "GRID"
+msgstr "RESEAU"
+
+#: ../../../apps/mysolarpv.php:162
+msgid "House or building use in watts"
+msgstr "Consommation du bâtiment en Watts"
+
+#: ../../../apps/mysolarpv.php:163
+msgid "Solar pv generation in watts"
+msgstr "Production solaire en Watts"
+
+#: ../../../apps/mysolarpv.php:164
+msgid "Exported solar in watts"
+msgstr "Injection dans le réseau en Watts"
+
+#: ../../../apps/mysolarpv.php:165
+msgid "Cumulative use in kWh"
+msgstr "Consommation cumulée en kWh"
+
+#: ../../../apps/mysolarpv.php:166
+msgid "Cumulative solar generation in kWh"
+msgstr "Production solaire cumulée en kWh"
+
+#: ../../../apps/mysolarpv.php:167
+msgid "Cumulative grid import in kWh"
+msgstr "Import du réseau cumulé en kWh"
+
+#: ../../../apps/mysolarpv.php:168
+msgid "Unit cost of imported grid electricity"
+msgstr "Devise de l'électricité importée"
+
+#: ../../../apps/mysolarpv.php:237
+msgid "HIDE BALANCE"
+msgstr "CACHER REPARTITION"
+
+#: ../../../apps/mysolarpv.php:253
+msgid "POWER VIEW"
+msgstr "PUISSANCE"
+
+#: ../../../apps/mysolarpv.php:365
+msgid "PERFECT BALANCE"
+msgstr "EQUILIBRE PARFAIT"
+
+#: ../../../apps/mysolarpv.php:370
+msgid "EXPORTING"
+msgstr "INJECTION"
+
+#: ../../../apps/mysolarpv.php:375
+msgid "IMPORTING"
+msgstr "ACHAT"
+
+#: ../../../apps/mysolarpv.php:655
+msgid "Above"
+msgstr "Au dessus"
+
+#: ../../../apps/mysolarpv.php:655
+msgid "Onsite Use & Total Use"
+msgstr "Consommation du site et totale"
+
+#: ../../../apps/mysolarpv.php:656
+msgid "Below"
+msgstr "En dessous"
+
+#: ../../../apps/mysolarpv.php:656
+msgid "Exported solar"
+msgstr "Solaire réinjecté"
